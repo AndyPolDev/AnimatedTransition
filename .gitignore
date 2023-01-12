@@ -90,3 +90,6 @@ fastlane/test_output
 iOSInjectionProject/
 /AnimatedTransition/AnimatedTransition.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 /AnimatedTransition/AnimatedTransition.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+/.DS_Store
+/AnimatedTransition/.DS_Store
+/AnimatedTransition/Pods
