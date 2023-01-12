@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A10A0F9A297038D8000C3DE5 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10A0F99297038D8000C3DE5 /* UIView + Extension.swift */; };
+		A10A0F9C2970395A000C3DE5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10A0F9B2970395A000C3DE5 /* SecondViewController.swift */; };
 		A1674E10296FCB4000C9EFD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1674E0F296FCB4000C9EFD5 /* AppDelegate.swift */; };
 		A1674E12296FCB4000C9EFD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1674E11296FCB4000C9EFD5 /* SceneDelegate.swift */; };
-		A1674E14296FCB4000C9EFD5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1674E13296FCB4000C9EFD5 /* ViewController.swift */; };
+		A1674E14296FCB4000C9EFD5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1674E13296FCB4000C9EFD5 /* FirstViewController.swift */; };
 		A1674E19296FCB4100C9EFD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1674E18296FCB4100C9EFD5 /* Assets.xcassets */; };
 		A1674E1C296FCB4100C9EFD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1674E1A296FCB4100C9EFD5 /* LaunchScreen.storyboard */; };
 		AF04E740DBF573462F1D525F /* Pods_AnimatedTransition.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92C065475BE4731256F64309 /* Pods_AnimatedTransition.framework */; };
@@ -19,10 +21,12 @@
 		7204077E3BA5FD330B7F4894 /* Pods-AnimatedTransition.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedTransition.debug.xcconfig"; path = "Target Support Files/Pods-AnimatedTransition/Pods-AnimatedTransition.debug.xcconfig"; sourceTree = "<group>"; };
 		894F778E1E537EA79B29EDDE /* Pods-AnimatedTransition.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedTransition.release.xcconfig"; path = "Target Support Files/Pods-AnimatedTransition/Pods-AnimatedTransition.release.xcconfig"; sourceTree = "<group>"; };
 		92C065475BE4731256F64309 /* Pods_AnimatedTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A10A0F99297038D8000C3DE5 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
+		A10A0F9B2970395A000C3DE5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A1674E0C296FCB4000C9EFD5 /* AnimatedTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1674E0F296FCB4000C9EFD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1674E11296FCB4000C9EFD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A1674E13296FCB4000C9EFD5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1674E13296FCB4000C9EFD5 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		A1674E18296FCB4100C9EFD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1674E1B296FCB4100C9EFD5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1674E1D296FCB4100C9EFD5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,6 +61,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A10A0F982970386F000C3DE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A10A0F99297038D8000C3DE5 /* UIView + Extension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		A1674E03296FCB4000C9EFD5 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +92,7 @@
 			children = (
 				A1674E23296FCE0300C9EFD5 /* Application */,
 				A1674E24296FCE2B00C9EFD5 /* Controllers */,
+				A10A0F982970386F000C3DE5 /* Extensions */,
 				A1674E25296FCE3A00C9EFD5 /* SupportingFiles */,
 			);
 			path = AnimatedTransition;
@@ -97,7 +110,8 @@
 		A1674E24296FCE2B00C9EFD5 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				A1674E13296FCB4000C9EFD5 /* ViewController.swift */,
+				A1674E13296FCB4000C9EFD5 /* FirstViewController.swift */,
+				A10A0F9B2970395A000C3DE5 /* SecondViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -227,8 +241,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1674E14296FCB4000C9EFD5 /* ViewController.swift in Sources */,
+				A10A0F9A297038D8000C3DE5 /* UIView + Extension.swift in Sources */,
+				A1674E14296FCB4000C9EFD5 /* FirstViewController.swift in Sources */,
 				A1674E10296FCB4000C9EFD5 /* AppDelegate.swift in Sources */,
+				A10A0F9C2970395A000C3DE5 /* SecondViewController.swift in Sources */,
 				A1674E12296FCB4000C9EFD5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
