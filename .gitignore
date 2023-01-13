@@ -88,3 +88,8 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+/AnimatedTransition/AnimatedTransition.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+/AnimatedTransition/AnimatedTransition.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+/.DS_Store
+/AnimatedTransition/.DS_Store
+/AnimatedTransition/Pods
