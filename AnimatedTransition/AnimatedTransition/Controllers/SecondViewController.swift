@@ -17,8 +17,8 @@ final class SecondViewController: UIViewController {
         setupViews()
         setConstraints()
     }
-
-    override func viewDidAppear(_ animated: Bool) {
+    
+    override func viewWillLayoutSubviews() {
         dismissButton.layer.cornerRadius = dismissButton.frame.width / 2
     }
 

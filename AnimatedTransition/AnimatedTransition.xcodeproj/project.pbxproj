@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A10A0F9A297038D8000C3DE5 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10A0F99297038D8000C3DE5 /* UIView + Extension.swift */; };
 		A10A0F9C2970395A000C3DE5 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10A0F9B2970395A000C3DE5 /* SecondViewController.swift */; };
+		A10A0F9F29703E2C000C3DE5 /* CircularTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10A0F9E29703E2C000C3DE5 /* CircularTransition.swift */; };
 		A1674E10296FCB4000C9EFD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1674E0F296FCB4000C9EFD5 /* AppDelegate.swift */; };
 		A1674E12296FCB4000C9EFD5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1674E11296FCB4000C9EFD5 /* SceneDelegate.swift */; };
 		A1674E14296FCB4000C9EFD5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1674E13296FCB4000C9EFD5 /* FirstViewController.swift */; };
@@ -23,6 +24,7 @@
 		92C065475BE4731256F64309 /* Pods_AnimatedTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A10A0F99297038D8000C3DE5 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 		A10A0F9B2970395A000C3DE5 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A10A0F9E29703E2C000C3DE5 /* CircularTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularTransition.swift; sourceTree = "<group>"; };
 		A1674E0C296FCB4000C9EFD5 /* AnimatedTransition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedTransition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1674E0F296FCB4000C9EFD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1674E11296FCB4000C9EFD5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		A10A0F9D29703DF4000C3DE5 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				A10A0F9E29703E2C000C3DE5 /* CircularTransition.swift */,
+			);
+			name = Transition;
+			sourceTree = "<group>";
+		};
 		A1674E03296FCB4000C9EFD5 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 			children = (
 				A1674E23296FCE0300C9EFD5 /* Application */,
 				A1674E24296FCE2B00C9EFD5 /* Controllers */,
+				A10A0F9D29703DF4000C3DE5 /* Transition */,
 				A10A0F982970386F000C3DE5 /* Extensions */,
 				A1674E25296FCE3A00C9EFD5 /* SupportingFiles */,
 			);
@@ -242,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A10A0F9A297038D8000C3DE5 /* UIView + Extension.swift in Sources */,
+				A10A0F9F29703E2C000C3DE5 /* CircularTransition.swift in Sources */,
 				A1674E14296FCB4000C9EFD5 /* FirstViewController.swift in Sources */,
 				A1674E10296FCB4000C9EFD5 /* AppDelegate.swift in Sources */,
 				A10A0F9C2970395A000C3DE5 /* SecondViewController.swift in Sources */,
