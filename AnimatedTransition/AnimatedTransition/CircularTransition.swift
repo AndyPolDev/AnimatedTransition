@@ -71,6 +71,11 @@ extension CircularTrancsition: UIViewControllerAnimatedTransitioning {
                 circle.layer.cornerRadius = circle.frame.width / 2
                 circle.center = startingPoint
                 
+                // For correct work with NavigationController
+                if let initialView = transitionContext.view(forKey: .to) {
+                    containerView.insertSubview(initialView, belowSubview: circle)
+                }
+                
                 UIView.animate(withDuration: duration) {
                     self.circle.transform = CGAffineTransform(scaleX: 0.001, y: 0.001)
                     returnedView.transform = CGAffineTransform(scaleX: 0.001, y: 0.001)

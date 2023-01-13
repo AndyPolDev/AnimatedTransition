@@ -18,6 +18,7 @@ final class FirstViewController: UIViewController {
         
         setupViews()
         setConstraints()
+        navigationController?.delegate = self
     }
     
     override func viewWillLayoutSubviews() {
@@ -35,7 +36,8 @@ final class FirstViewController: UIViewController {
         let secondViewController = SecondViewController()
         secondViewController.modalPresentationStyle = .custom
         secondViewController.transitioningDelegate = self
-        present(secondViewController, animated: true)
+        // present(secondViewController, animated: true)
+        navigationController?.pushViewController(secondViewController, animated: true)
     }
 }
 
@@ -58,6 +60,22 @@ extension FirstViewController: UIViewControllerTransitioningDelegate {
         transition.transitionMode = .dismiss
         transition.startingPoint = presentButton.center
         transition.circleColor = presentButton.backgroundColor ?? .red
+        return transition
+    }
+}
+
+// MARK: - UINavigationControllerDelegate
+
+extension FirstViewController: UINavigationControllerDelegate {
+    
+    func navigationController(_ navigationController: UINavigationController,
+                              animationControllerFor operation: UINavigationController.Operation,
+                              from fromVC: UIViewController,
+                              to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        
+        transition.transitionMode = operation == .push ? .present : .dismiss
+        transition.startingPoint = presentButton.center
+        transition.circleColor = operation == .pop ? .white : .red
         return transition
     }
 }

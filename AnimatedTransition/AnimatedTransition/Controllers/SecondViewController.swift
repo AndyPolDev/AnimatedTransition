@@ -30,7 +30,8 @@ final class SecondViewController: UIViewController {
     }
 
     @objc private func dismissButtonPressed() {
-        dismiss(animated: true)
+        // dismiss(animated: true)
+        navigationController?.popViewController(animated: true)
     }
 }
 
